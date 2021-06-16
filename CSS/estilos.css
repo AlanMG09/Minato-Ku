@@ -1,0 +1,1076 @@
+/* Usamos la tipo Lato */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+
+/* Algunas generalidades */
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "lato", sans-serif;
+	overflow-x: hidden;
+}
+
+body {
+	background-image: url("../imagenes/fondo.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+#contenedor {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgb(0, 0, 0, 0.7);
+}
+
+h1 {
+	display: flex;
+	width: 50px;
+	height: 27px;
+	justify-content: flex-start;
+	align-self: center;
+	color: white;
+	font-size: 0;
+	background-image: url("../imagenes/logo.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+h2 {
+	text-align: center;
+	color: rgb(255, 255, 255);
+	font-size: 40px;
+	font-family: "lato";
+	padding: 40px 0 40px 0;
+}
+
+h3 {
+	color: rgb(255, 0, 138);
+	font-family: "lato", sans-serif;
+	font-size: 18px;
+	padding: 0;
+	margin-top: 0;
+}
+
+h4 {
+	color: rgb(255, 255, 255);
+	font-family: "lato", sans-serif;
+	font-size: 14px;
+}
+
+p {
+	color: rgb(255, 255, 255);
+	font-size: 12px;
+	font-family: "lato", sans-serif;
+}
+
+ul {
+	list-style: none;
+	justify-content: flex-end;
+}
+
+
+
+/* Arranca el header */
+/* El menu de navegacion */
+
+header {
+	width: 100%;
+	margin: 0 auto;
+	background-color: black;
+}
+
+header > div {
+	margin: 0 auto;
+	width: 100%;
+}
+
+.menu {
+	display: flex;
+	width: 100%;
+	align-content: space-around;
+	z-index: 1;
+	margin-left: 12.5%;
+}
+
+nav {
+	display: flex;
+	width: 71.3%;
+	justify-content: center;
+}
+
+.menu nav > ul li > a {
+	color: rgb(255, 255, 255);
+	padding: 5px;
+	display: block;
+	text-decoration: none;
+	min-width: 100px;
+	font-size: 12px;
+}
+
+.menu nav > ul > li > a:hover {
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+}
+
+.menu nav > ul > li > ul > li > a:hover {
+	background-color: rgb(0, 0, 0);
+	color: rgb(255, 0, 138);
+
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+}
+
+.menu nav > ul > li {
+	float: left;
+	text-align: center;
+}
+
+.menu nav > ul > li > ul {
+	display: none;
+	position: absolute;
+}
+
+.menu nav > ul > li > ul > li > a {
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+}
+
+.menu nav > ul > li:hover > ul {
+	display: block;
+}
+
+.menu nav > ul > li {
+	width: 130px;
+}
+
+.menu nav > ul > li > ul > li:nth-child(2) {
+	width: 130px;
+}
+
+.menu nav > ul > li:nth-child(3) {
+	width: 130px;
+}
+
+.menu nav > ul > li:nth-child(3) > ul > li {
+	width: 130px;
+}
+
+.menu nav > ul > li:nth-child(4) {
+	width: 130px;
+}
+
+.menu nav > ul > li:nth-child(5) {
+	width: 130px;
+}
+
+
+/* El banner de la web */
+
+
+header > figure {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+header > figure > figcaption {
+	top: 35%;
+	margin-left: 12%;
+	position: absolute;
+	z-index: 1;
+	display: flex;
+	flex-direction: column-reverse;
+	padding: 10px;
+}
+
+figcaption > span:first-child {
+	font-size: 600%;
+	font-weight: bold;
+	color: rgb(255,255,255);
+	border-width: thin;
+	border-style: solid;
+	border-right: none;
+	border-left: none;
+	border-bottom: none;
+	border-color: rgb(255,0,138);
+	padding: 0;
+}
+
+figcaption > span:last-child {
+	font-size: 180%;
+	margin-left: 1.5%;
+	color: rgb(255,255,255);
+	padding-bottom: 4%;
+}
+
+header img {
+	width: 100%;
+}
+
+
+/* Empezamos el main */
+
+main {
+	width: 69%;
+	margin: 0 auto;
+	padding: 30px 40px 30px 40px;
+}
+
+section {
+	padding: 0 0 5% 0;
+	margin-left: 0%;
+}
+
+
+/* Sections del itinerario.html */
+
+main figcaption {
+	color: rgb(255, 255, 255);
+	font-size: 10px;
+	text-align: center;
+}
+
+.desizq {
+	display: flex;
+	flex-flow: wrap;
+	padding: 5% 0 5% 5%;
+}
+
+.desizq figure {
+	width: 350px;
+	height: 300px;
+	overflow: hidden;
+	margin-left: 2%;
+}
+
+.desizq img {
+	width: 100%;
+	height: 90%;
+}
+
+.desizq div {
+	width: 400px;
+	padding: 0 0 0 5%;
+}
+
+.desizq p {
+	text-align: justify;
+	padding: 5% 0 0 0;
+}
+
+.desder {
+	display: flex;
+	flex-flow: wrap;
+	flex-direction: row-reverse;
+	padding: 5% 5% 5% 0;
+}
+
+.desder figure {
+	width: 350px;
+	height: 300px;
+	overflow: hidden;
+	margin-right: 2%;
+}
+
+.desder img {
+	width: 100%;
+	height: 90%;
+}
+
+.desder div {
+	width: 400px;
+	padding: 0 5% 0 0;
+}
+
+.desder p {
+	text-align: justify;
+	padding: 5% 0 0 0;
+}
+
+
+/*  El main del index */
+
+#index > section:nth-child(2) {
+	display: flex;
+	flex-flow: wrap;
+	padding: 5% 0 5% 5%;
+}
+
+#index > section:nth-child(2) h2 {
+	padding: 0;
+}
+
+#index > section:nth-child(2) figure {
+	width: 350px;
+	height: 300px;
+	overflow: hidden;
+	margin-left: 2%;
+}
+
+#index > section:nth-child(2) img {
+	width: 100%;
+	height: 100%;
+}
+
+#index > section:nth-child(2) div {
+	width: 400px;
+	padding: 0 0 0 5%;
+}
+
+#index > section:nth-child(2) p {
+	text-align: justify;
+	padding: 13% 0 0 0;
+}
+
+#index > section:nth-child(2) {
+	display: flex;
+	flex-flow: wrap;
+	padding: 5% 0 5% 5%;
+}
+
+#index > section:nth-child(5) {
+	padding: 0 0 5% 0;
+}
+
+iframe {
+	display: block;
+	margin: 0 auto;
+	border-color: rgb(0, 0, 0);
+
+}
+
+#index > section > p {
+	width: 87%;
+	font-size: 100%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#index > section:first-child {
+	border: none;
+}
+
+
+/* Galeria */
+
+.slideshow-container {
+  width: 70%;
+	height: 50;
+  position: relative;
+  margin: auto;
+}
+
+#index figure {
+	height: 50%;
+}
+#index figure img {
+	background-size: cover
+}
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: rgb(255,255,255);
+	background-color: rgb(0,0,0, 0.7);
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgb(75,75,75);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: rgb(255,255,255);
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* El gracias */
+
+#gracias p {
+	text-align: center;
+	font-size: 100%;
+}
+
+#gracias {
+	border-style: none;
+}
+
+#gracias a {
+	color: rgb(255,255,255);
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	margin-top: 6%;
+}
+
+#gracias a:hover {
+	color: rgb(255,0,138);
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+}
+
+/* La sección de eventos */
+
+main > p {
+	width: 87%;
+	font-size: 100%;
+	text-align: justify;
+	margin: 0 auto;
+	padding: 0 0 5% 0;
+}
+
+main section {
+	border-top-width: thin;
+	border-color: rgb(255,0,138);
+	border-style: solid;
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+}
+
+section > h3 {
+	padding: 5% 0 0 0;
+	text-align: center;
+	color: rgb(255, 255, 255);
+}
+
+.articulos {
+	display: flex;
+}
+
+article {
+	display: flex;
+	padding: 5% 0 0 0;
+	height: 297, 92px;
+}
+
+article h4 {
+	color: rgb(255, 0, 138);
+}
+
+article div {
+	width: 230px;
+	padding: 0 0 0 5%;
+}
+
+article p {
+	font-size: 11px;
+	text-align: justify;
+	width: 190px;
+
+	padding: 5% 0 0 0;
+}
+
+article figure {
+	width: 200px;
+}
+
+article img {
+	width: 220px;
+}
+
+#verano > div {
+	margin-left: 5%;
+}
+
+#invierno > div {
+	margin-left: 5%;
+}
+
+#arte > div {
+	margin-left: 5%;
+}
+
+#festivales > div {
+	margin-left: 5%;
+}
+
+#festivos > div {
+	margin-left: 5%;
+}
+
+
+/* Seccion de transportes */
+
+#transporte {
+	border-top: none;
+}
+
+#transporte > div {
+	display: flex;
+}
+
+#transporte > div > article {
+	display: flex;
+	flex-flow: column;
+	padding: 2%;
+	height: 220px;
+	width: 180px;
+	border-radius: 5%;
+	background-color: rgb(255,255,255);
+}
+
+#transporte > div > article:first-child {
+	margin-right: 2%;
+}
+
+#transporte > div > article:nth-child(2) {
+	margin-right: 2%;
+}
+
+#transporte > div > article:nth-child(3) {
+	margin-right: 2%;
+}
+
+#transporte > div > article > h3 {
+	align-self: center;
+}
+
+#transporte > div > article > p {
+	color: rgb(0,0,0);
+	align-self: center;
+	border-style: solid;
+	border-width: thin;
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+	border-color: rgb(255,0,138);
+	font-size: 75%;
+}
+#transporte > div > article > figure > img {
+	width: 50px;
+}
+
+#transporte > div > article > figure {
+	width: 50px;
+	align-self: center;
+	padding: 5%;
+}
+
+
+/* Seccion de pagos */
+
+#pagos {
+	display: flex;
+	flex-flow: column;
+}
+#pagos > section {
+	display: flex;
+	width: 75%;
+	align-self: center;
+	border-top: none;
+}
+
+#pagos > section > div {
+	width: 60%;
+	margin-left: 5%;
+}
+
+#pagos > section > div > h3 {
+	padding-bottom: 5%;
+}
+
+#pagos > section > div > p {
+	font-size: 13px;
+	text-align: justify;
+}
+
+#pagos > section > div > a {
+	color: rgb(0,0,0);
+	text-decoration: none;
+	background-color: rgb(255,255,255);
+	padding: 3%;
+	margin-top: 10%;
+	margin-right: 0;
+	margin-bottom: 0;
+}
+
+#pagos > section > div > a:hover {
+	background-color: rgb(255,0,138);
+	color: rgb(255,255,255);
+
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+}
+
+/* Seccion de informacion/tours */
+
+#tours > div {
+	display: flex;
+	height: 200%;
+	justify-content: center;
+}
+
+#tours > div > article {
+	display: flex;
+	flex-flow: column wrap;
+	background-color: rgb(255,255,255);
+	width: 25%;
+	height: 100%;
+	padding: 2% 0 2% 2%;
+	border-radius: 5%;
+}
+
+#tours > div > article:first-child {
+	margin-right: 5%;
+}
+
+#tours > div > article:last-child {
+	margin-left: 5%;
+}
+
+#tours > div > article > h3 {
+	font-size: 100%;
+	padding: 5% 0 0 0;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	margin-right: 2%;
+}
+
+#tours > div > article > span {
+	font-size: 83%;
+	text-align: justify;
+	width: 95%;
+	padding: 3% 0 3% 0;
+	align-self: flex-start;
+	margin-left: 0;
+	border-style: solid;
+	border-width: thin;
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+	border-color: rgb(255,0,138);
+}
+
+#tours a {
+	color: rgb(255,0,138);
+	text-decoration: none;
+	background-color: rgb(0,0,0);
+	padding: 3%;
+	margin-top: 3%;
+	margin-right: 0;
+	align-self: center;
+	width: 100%;
+}
+
+#tours a:hover {
+	background-color: rgb(255,0,138);
+	color: rgb(0,0,0);
+
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+}
+
+
+/* Acá va el formulario de consulta de la pagina de contacto */
+
+form span {
+	color: white;
+	background-color: rgb(255, 0, 138);
+	font-size: 12px;
+	padding: 15px 15px 15px 15px;
+	width: 470px;
+	display: flex;
+	justify-content: center;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+	color: rgb(255, 255, 255);
+	font-size: 12px;
+}
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+	color: rgb(255, 255, 255);
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+	color: rgb(255, 255, 255);
+	font-size: 12px;
+}
+
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
+	color: rgb(255, 255, 255);
+}
+
+input::placeholder,
+textarea::placeholder {
+	color: rgb(255, 255, 255);
+	font-size: 12px;
+}
+
+input:focus::placeholder,
+textarea::focus:placeholder {
+	color: rgb(255, 255, 255);
+}
+
+input::-ms-placeholder,
+textarea::-ms-placeholder {
+	color: rgb(255, 255, 255);
+	font-size: 12px;
+}
+
+input:focus::-ms-placeholder,
+textarea:focus::-ms-placeholder {
+	color: rgb(255, 255, 255);
+}
+
+input:hover::-webkit-input-placeholder,
+textarea:hover::-webkit-input-placeholder {
+	color: rgb(75, 75, 75);
+	font-size: 12px;
+}
+
+input:hover:focus::-webkit-input-placeholder,
+textarea:hover:focus::-webkit-input-placeholder {
+	color: rgb(255, 255, 255);
+}
+
+input:hover::-moz-placeholder,
+textarea:hover::-moz-placeholder {
+	color: rgb(75, 75, 75);
+	font-size: 12px;
+}
+
+input:hover:focus::-moz-placeholder,
+textarea:hover:focus::-moz-placeholder {
+	color: rgb(255, 255, 255);
+}
+
+input:hover::placeholder,
+textarea:hover::placeholder {
+	color: rgb(75, 75, 75);
+	font-size: 12px;
+}
+
+input:hover:focus::placeholder,
+textarea:hover:focus::placeholder {
+	color: rgb(255, 255, 255);
+}
+
+input:hover::placeholder,
+textarea:hover::placeholder {
+	color: rgb(75, 75, 75);
+	font-size: 12px;
+}
+
+input:hover:focus::-ms-placeholder,
+textarea:hover::focus:-ms-placeholder {
+	color: rgb(75, 75, 75);
+}
+
+form {
+	position: relative;
+	width: 500px;
+	margin: 0 auto 100px auto;
+	overflow: visible;
+	padding-top: 5%;
+}
+
+main > div {
+	border-style: solid;
+	border-width: thin;
+	border-color: rgb(255,0,138);
+	border-bottom: none;
+	border-left: none;
+	border-right: none;
+}
+
+input {
+	font-size: 12px;
+	width: 470px;
+	height: 50px;
+	padding: 0px 15px 0px 15px;
+
+	background: transparent;
+	outline: none;
+	color: rgb(250,250,250);
+
+	border: solid 1px rgb(255, 255, 255);
+
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+	background: rgb(200, 200, 200);
+	color: rgb(75, 75, 75);
+}
+
+textarea {
+	width: 470px;
+	max-width: 470px;
+	height: 110px;
+	max-height: 110px;
+	padding: 15px;
+
+	background: transparent;
+	outline: none;
+
+	color: rgb(250,250,250);
+	font-size: 12px;
+	font-family: sans-serif;
+
+	border: solid 1px rgb(255, 255, 255);
+
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+	background: rgb(200, 200, 200);
+	color: rgb(75, 75, 75);
+}
+
+.datos {
+	display: flex;
+	width: 502px;
+}
+
+.doc {
+	padding: 0;
+	color: rgb(255, 255, 255);
+	border: solid 1px rgb(255, 255, 255);
+	border-top: none;
+	width: 500px;
+	font-size: 12px;
+	display: flex;
+	align-content: center;
+}
+
+.doc input {
+	border: 0;
+	width: 300px;
+	height: 20px;
+	padding: 15px;
+	border-left: solid 1px rgb(255, 255, 255);
+}
+
+.doc label {
+	width: 250px;
+	padding: 15px;
+	align-self: center;
+}
+
+.radio {
+	height: 25px;
+	width: 30px;
+	padding: 0px 10px 0px 0px;
+}
+
+.gradio {
+	display: flex;
+	justify-content: space-around;
+	width: 502px;
+	font-size: 12px;
+}
+
+.gradio label {
+	padding: 15px 10px 15px 10px;
+	color: rgb(255, 255, 255);
+	display: flex;
+	align-items: center;
+}
+
+.grupo {
+	color: rgb(255, 0, 138);
+	border: solid 1px rgb(255, 255, 255);
+	border-top: none;
+	width: 500px;
+}
+
+#submit {
+	width: 502px;
+
+	padding: 0;
+	margin: -5px 0px 0px 0px;
+
+	font-size: 12px;
+	color: rgb(255, 0, 138);
+
+	outline: none;
+	cursor: pointer;
+
+	border: solid 1px rgb(255, 255, 255);
+	border-top: none;
+}
+
+#submit:hover {
+	color: white;
+	background-color: rgb(255, 0, 138);
+}
+
+
+
+/* Vamos con el footer */
+
+footer {
+	width: 100%;
+	height: 135px;
+	margin: 0 auto;
+	text-align: center;
+	background-color: rgb(0, 0, 0);
+	overflow-y: hidden;
+}
+
+footer > div:last-child {
+	padding: 10px;
+	height: 40px;
+	width: 73.2%;
+	margin-left: 12.7%;
+	overflow-y: hidden;
+	border-top-width: thin;
+	border-color: rgb(255,0,138);
+	border-style: solid;
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+}
+
+footer > div > ul {
+	display: flex;
+	justify-content: center;
+}
+
+footer > div > ul > li {
+	color: rgb(255, 255, 255);
+}
+
+footer > ul > li:nth-child(1) > a {
+	font-size: 0;
+	width: 40px;
+	height: 40px;
+	background-image: url("../imagenes/mail.png");
+	background-size: cover
+}
+
+footer > ul > li:nth-child(2) > a {
+	font-size: 0;
+	width: 40px;
+	height: 40px;
+	background-image: url("../imagenes/facebook.png");
+	background-size: cover
+}
+
+footer > ul > li:nth-child(2) > a:hover {
+	font-size: 0;
+	width: 40px;
+	height: 40px;
+	background-image: url("../imagenes/facebook2.png");
+	background-size: cover transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+}
+
+footer ul > li:nth-child(3) > a {
+	font-size: 0;
+	width: 40px;
+	height: 40px;
+	background-image: url("../imagenes/instagram.png");
+	background-size: cover
+}
+
+footer ul > li:nth-child(3) > a:hover {
+	font-size: 0;
+	width: 40px;
+	height: 40px;
+	background-image: url("../imagenes/instagram2.png");
+	background-size: cover transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+}
+
+footer ul > li:nth-child(4) {
+	align-self: center;
+}
+
+footer p {
+	font-size: 10px;
+	padding: 1% 0 1% 0;
+	color: rgb(230, 230, 230);
+}

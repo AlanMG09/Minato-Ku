@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Minato-Kû</title>
+	<link rel="stylesheet" href="CSS/estilos.css">
+	<link rel="icon" href="imagenes/favicon.png" type="image/png" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+
+<body>
+	<div id="contenedor">
+		<header>
+			<div class="menu">
+				<h1>MINATO</h1>
+				<nav>
+					<ul class="menu">
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="itinerario.html">DESTINOS</a>
+							<ul>
+								<li><a href="itinerario.html#roppongi">ROPPONGI</a></li>
+								<li><a href="itinerario.html#aoyama">AOYAMA</a></li>
+								<li><a href="itinerario.html#odaiba">ODAIBA</a></li>
+								<li><a href="itinerario.html#akasaka">AKASAKA</a></li>
+								<li><a href="itinerario.html#shinagawa">SHINAGAWA</a></li>
+							</ul>
+						</li>
+						<li><a href="info.html">EVENTOS</a>
+							<ul>
+								<li><a href="info.html#verano">PRIMAVERA/VERANO</a></li>
+								<li><a href="info.html#invierno">OTOÑO/INVIERNO</a></li>
+								<li><a href="info.html#arte">ARTÍSTICOS</a></li>
+								<li><a href="info.html#festivales">FESTIVALES</a></li>
+								<li><a href="info.html#festivos">FESTIVIDADES</a></li>
+							</ul>
+						</li>
+						<li><a href="viajes.html">INFORMACIÓN</a>
+							<ul>
+								<li><a href="viajes.html#transporte">TRANSPORTE</a></li>
+								<li><a href="viajes.html#pagos">MEDIOS DE PAGO</a></li>
+								<li><a href="viajes.html#tours">TOURS</a></li>
+							</ul>
+						</li>
+						<li id="co"><a href="formulario.html">CONTACTO</a></li>
+					</ul>
+				</nav>
+			</div>
+			<figure>
+				<img src="imagenes/banner3.jpg" alt="La ciudad de Minato">
+				<figcaption>
+					<span>MINATO</span>
+					<span> LA CIUDAD DEL DÍA SIN FIN</span>
+				</figcaption>
+			</figure>
+		</header>
+
+		<main id="for">
+			<h2>MANDANOS TU CONSULTA</h2>
+			<p>Envianos la consulta que necesites sobre transporte, destinos, eventos, disponibilidad de alojamientos o excursiones.</p>
+			<div>
+				<form method="post" action="gracias.html" enctype="multipart/form-data">
+					<div class="datos">
+						<input type="text" placeholder="NOMBRE" name="NOMBRE" required>
+						<input type="text" placeholder="APELLIDO" name="APELLIDO" required>
+					</div>
+					<div class="grupo">
+						<span>SEXO</span>
+						<div class="gradio">
+							<label><input type="radio" value="SEXO" name="SEXO" class="radio">FEMENINO</label>
+							<label><input type="radio" value="SEXO" name="SEXO" class="radio">MASCULINO</label>
+							<label><input type="radio" value="SEXO" name="SEXO" class="radio">OTROS</label>
+						</div>
+					</div>
+					<div class="datos">
+						<input type="number" placeholder="EDAD" name="EDAD" required>
+						<input type="text" placeholder="NACIONALIDAD" name="NACIONALIDAD" required>
+					</div>
+					<div class="datos">
+						<input type="email" placeholder="E-MAIL" name="EMAIL" required>
+						<input type="tel" placeholder="TELÉFONO" name="TELEFONO" required>
+					</div>
+					<div class="grupo">
+						<span>TIPO DE CONSULTA</span>
+						<div class="gradio">
+							<label><input type="radio" value="TIPO" name="TIPO" class="radio">INFORMACIÓN</label>
+							<label><input type="radio" value="TIPO" name="TIPO" class="radio">TRANSPORTE</label>
+							<label><input type="radio" value="TIPO" name="TIPO" class="radio">TURISMO</label>
+						</div>
+					</div>
+					<div class="doc">
+						<label>TU DOCUMENTACION</label>
+						<input type="file" name="DOCUMENTACION">
+					</div>
+					<textarea rows="10" cols="48" name="consulta" placeholder="CONSULTA" required></textarea>
+					<input id="submit" type="submit" value="ENVIAR">
+				</form>
+			</div>
+			<script>
+				window.onload = function() {
+					document.getElementById('co').style.background = 'rgb(255,0,138)';
+				}
+			</script>
+		</main>
+
+		<footer>
+			<div>
+				<ul>
+					<li><a href="mailto:descubri.minato@viajar.com">Mail</a></li>
+					<li><a href="https://www.facebook.com/places/Cosas-para-hacer-en-Minato-ku-Tokyo-Japan/160300197351040" target="_blank">Facebook</a></li>
+					<li><a href="https://www.instagram.com/explore/locations/235312288/minato-ku-tokyo-japan/" target="_blank">Instagram</a></li>
+					<li>Centro de atención: 0800-111-9999</li>
+				</ul>
+			</div>
+			<div>
+				<p>© 2020 - Web desarrollada por Alan Godoy como trabajo práctico para la materia de Maquetado y Desarrollo Web. <br>
+					Primer cuatrimestre de la carrera de Diseño Web en la escuela DaVinci. Docente a cargo Jonatan Jorge.</p>
+			</div>
+		</footer>
+	</div>
+</body></html>
